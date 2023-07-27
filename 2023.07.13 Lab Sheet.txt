@@ -1,0 +1,54 @@
+2023.07.13 Lab Sheet
+
+Question 1
+
+Question 2
+
+
+package com.mycompany.lab;
+public class Lab {
+
+    public static void main(String[] args) 
+    {
+        int[] numbers={1,2,3,4,5};
+        try 
+        {
+            int value = numbers [10];
+            System.out.println("value"+value);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Error:Array index is out of bounds");
+        }
+    }
+}
+
+Question 3
+
+
+package com.mycompany.lab;
+public class Lab {
+
+    public static void main(String[] args) 
+    {
+    
+        try 
+        {
+            //file (c:\\User\\nsbm\\Documents\\Net BeansProject\\javaException)
+           File file=new File("newfile1.txt");
+           
+           Scanner scanner = new Scanner(file);
+           
+           while(sacnner.hasNextLine())
+           {
+               String line =scanner.nextLine();
+               System.out.println(line);
+           }
+           scanner.close();
+        }
+        catch (Exception e)
+        {
+            System.out.println("Error:File not found.\n"+e);
+        }
+    }
+}
